@@ -1,21 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="43b77528-0ab4-415d-889a-e59f216c9bae" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../ex7_aula2/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ex7_aula2/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ex7_aula2/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ex7_aula2/ex7_aula2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ex7_aula2/src/ClientTCP.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ex7_aula2/src/ServerTCP.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ex8_aula2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ex8_aula2/ClientTCP.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ex8_aula2/ServerTCP.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ClientTCP.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ServerTCP.java" afterDir="false" />
+    <list default="true" id="43b77528-0ab4-415d-889a-e59f216c9bae" name="Changes" comment="aula 2">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +28,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/Desktop/PD_Pratica/Ficha1/ex8_aula2/src"
+    "last_opened_file_path": "D:/Desktop/PD_Pratica/Ficha1/ex9_aula3"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -79,8 +66,18 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1664818812912</updated>
-      <workItem from="1664818815349" duration="2403000" />
+      <workItem from="1664818815349" duration="2577000" />
+      <workItem from="1664890849364" duration="97000" />
+      <workItem from="1665420266831" duration="180000" />
     </task>
+    <task id="LOCAL-00001" summary="aula 2">
+      <created>1664821359406</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1664821359406</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -96,5 +93,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="aula 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="aula 2" />
   </component>
 </project>

@@ -41,10 +41,8 @@ public class ClientUDP {
         FileOutputStream fos = new FileOutputStream("client/" + filename);
 
         do{
-            System.out.println("1");
             ds.receive(dpRec);
 
-            System.out.println("2");
             ByteArrayInputStream bais = new ByteArrayInputStream(dpRec.getData());
             ObjectInputStream ois = new ObjectInputStream(bais);
 

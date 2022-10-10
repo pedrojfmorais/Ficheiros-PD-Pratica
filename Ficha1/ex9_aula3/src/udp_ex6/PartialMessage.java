@@ -1,8 +1,12 @@
 package udp_ex6;
 
+import java.io.Serial;
 import java.io.Serializable;
 
 public class PartialMessage implements Serializable {
+
+    @Serial
+    private static final long serialVersionUID = 1L;
 
     private byte[] msg;
     private int msgSize;

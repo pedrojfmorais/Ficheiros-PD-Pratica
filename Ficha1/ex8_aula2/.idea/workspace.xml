@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="43b77528-0ab4-415d-889a-e59f216c9bae" name="Changes" comment="aula 2">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex9_aula3/src/tcp_ex8/ClientTCP.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex9_aula3/src/tcp_ex8/ServerTCP.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +29,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/Desktop/PD_Pratica/Ficha1/ex9_aula3"
+    "last_opened_file_path": "D:/Desktop/Escola/ISEC/Licenciatura de Engenharia Informática/Cadeiras/3º Ano/1º Semestre/Programação Distribuída/Práticas/Ficha1/ex8_aula2"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -69,6 +70,7 @@
       <workItem from="1664818815349" duration="2577000" />
       <workItem from="1664890849364" duration="97000" />
       <workItem from="1665420266831" duration="180000" />
+      <workItem from="1665438079757" duration="32000" />
     </task>
     <task id="LOCAL-00001" summary="aula 2">
       <created>1664821359406</created>

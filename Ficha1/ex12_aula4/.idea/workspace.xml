@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="adfc7091-1b14-4b05-a9ad-6067b8a982ab" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../ex10_aula4/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex10_aula4/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex10_aula4/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex10_aula4/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex10_aula4/ex10_aula4.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex10_aula4/src/tcp_ex7/ClientTCP.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex10_aula4/src/tcp_ex7/ServerCurrentTime.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex10_aula4/src/tcp_ex7/ServerTCP.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex10_aula4/src/tcp_ex7/ThreadCLientP1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex11_aula4/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex11_aula4/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex11_aula4/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex11_aula4/ex11_aula4.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex11_aula4/out/production/ex11_aula4/ChatClient$ReceiveMessages.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex11_aula4/out/production/ex11_aula4/ChatClient.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex11_aula4/out/production/ex11_aula4/ListNetworkInterfaces.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex11_aula4/src/ChatClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex11_aula4/src/ListNetworkInterfaces.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex12_aula4.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ChatClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ListNetworkInterfaces.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Msg.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2GH5ySzPBmAYAFvEHnEolcy02zy" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/Desktop/ED_Pratica/ex12_aula4/src"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Desktop\ED_Pratica\ex12_aula4\src" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="ChatClient" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ChatClient" />
+      <module name="ex12_aula4" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ChatClient" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="adfc7091-1b14-4b05-a9ad-6067b8a982ab" name="Changes" comment="" />
+      <created>1666032924759</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1666032924759</updated>
+      <workItem from="1666032926693" duration="1052000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>

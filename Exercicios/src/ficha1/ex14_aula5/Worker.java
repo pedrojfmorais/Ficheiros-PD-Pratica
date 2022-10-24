@@ -6,6 +6,7 @@ import java.net.Socket;
 import java.util.ArrayList;
 
 public class Worker {
+    // 3 workers diferentes, args = "5001", args = "5002", args = "5003"
     public static void main(String[] args) throws IOException, InterruptedException {
 
         if(args.length != 1)

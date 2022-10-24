@@ -38,6 +38,7 @@ public class master {
         return result;
     }
 
+    //args = "workers.txt 100000"
     public static void main(String[] args) throws IOException, InterruptedException {
         if(args.length != 2)
             return;

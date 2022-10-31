@@ -1,19 +1,31 @@
 package ficha1.ex15_aula6.c;
 
+import ficha1.ex15_aula6.c.MSG_Workers;
+import ficha1.ex15_aula6.c.ThreadMaster;
+
 import java.io.IOException;
 import java.net.*;
 import java.util.ArrayList;
 
 public class master {
 
-    public static ArrayList<String[]> getWorkers() throws IOException {
+    //args = "workers.txt 100000"
+    public static void main(String[] args) throws IOException, InterruptedException {
+        if(args.length != 1)
+            return;
 
-        ArrayList<String[]> workers = new ArrayList<>();
+        int nIntervalos = Integer.parseInt(args[0]);
+
+        ArrayList<Thread> allThreads = new ArrayList<>();
+        ArrayList<Socket> allSocketsWorkers = new ArrayList<>();
+
+        ServerSocket ss = new ServerSocket(0);
+
+        int tcpPort = ss.getLocalPort();
 
         DatagramSocket ds = new DatagramSocket();
-        ds.setBroadcast(true);
 
-        byte[] msg = new byte[0];
+        byte[] msg = Integer.toString(tcpPort).getBytes();
 
         DatagramPacket dpSend = new DatagramPacket(
                 msg,
@@ -24,46 +36,31 @@ public class master {
 
         ds.send(dpSend);
 
-        ds.setSoTimeout(2 * 1000);
+        ss.setSoTimeout(5 * 1000);
 
         while(true){
 
-            DatagramPacket dpRec = new DatagramPacket(new byte[4000], 4000);
+            Socket cliSocket = null;
+
             try {
-                ds.receive(dpRec);
-            } catch (SocketTimeoutException e) {
+
+                cliSocket = ss.accept();
+
+            }catch(SocketTimeoutException e){
                 break;
             }
 
-            String[] temp = new String[2];
-            temp[0] = dpRec.getAddress().toString().substring(1);
-            temp[1] = new String(dpRec.getData(), 0, dpRec.getLength());
-
-            workers.add(temp);
+            allSocketsWorkers.add(cliSocket);
         }
 
-        return workers;
-    }
+        Double[] res = new Double[allSocketsWorkers.size()];
 
-    //args = "workers.txt 100000"
-    public static void main(String[] args) throws IOException, InterruptedException {
-        if(args.length != 1)
-            return;
+        for (int i = 0; i < allSocketsWorkers.size(); i++) {
 
-        int nIntervalos = Integer.parseInt(args[0]);
 
-        ArrayList<String[]> workers = getWorkers();
-        Double[] res = new Double[workers.size()];
+            MSG_Workers msgWorker = new MSG_Workers(nIntervalos, allSocketsWorkers.size(), i+1);
 
-        ArrayList<Thread> allThreads = new ArrayList<>();
-
-        for (int i = 0; i < workers.size(); i++) {
-
-            Socket cliSocket = new Socket(workers.get(i)[0], Integer.parseInt(workers.get(i)[1]));
-
-            MSG_Workers msgWorker = new MSG_Workers(nIntervalos, workers.size(), i+1);
-
-            ThreadMaster t = new ThreadMaster(cliSocket, msgWorker, res); // extends Thread
+            ThreadMaster t = new ThreadMaster(allSocketsWorkers.get(i), msgWorker, res); // extends Thread
 
             t.start();
 

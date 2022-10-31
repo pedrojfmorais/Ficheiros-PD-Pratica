@@ -1,6 +1,8 @@
 package ficha1.ex15_aula6.c;
 
 import java.io.IOException;
+import java.net.DatagramPacket;
+import java.net.MulticastSocket;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.ArrayList;
@@ -14,16 +16,19 @@ public class Worker {
 
         boolean keepGoing = true;
 
-        ServerSocket workerSocket = new ServerSocket(Integer.parseInt(args[0]));
+        MulticastSocket ms = new MulticastSocket(5001);
         ArrayList<Thread> allThreads = new ArrayList<>();
 
-        ThreadWorkerResponseUDP threadWorkerResponseUDP = new ThreadWorkerResponseUDP(Integer.parseInt(args[0]));
-        threadWorkerResponseUDP.start();
-
-        allThreads.add(threadWorkerResponseUDP);
-
         while(keepGoing) {
-            Socket masterSocket = workerSocket.accept();
+
+            DatagramPacket dpRec = new DatagramPacket(new byte[4000], 4000);
+
+            ms.receive(dpRec);
+
+            Socket masterSocket = new Socket(
+                    dpRec.getAddress().getHostAddress(),
+                    Integer.parseInt(new String(dpRec.getData(), 0, dpRec.getLength()))
+            );
 
             System.out.println("Connected to " + masterSocket.getInetAddress().getHostAddress()
                     + ":" + masterSocket.getPort());
@@ -40,6 +45,6 @@ public class Worker {
             t.join();
         }
 
-        workerSocket.close();
+        ms.close();
     }
 }

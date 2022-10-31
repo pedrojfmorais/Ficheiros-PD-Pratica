@@ -38,7 +38,7 @@ public class master {
             }
 
             String[] temp = new String[2];
-            temp[0] = dpRec.getAddress().toString().substring(1);
+            temp[0] = dpRec.getAddress().getHostAddress();
             temp[1] = new String(dpRec.getData(), 0, dpRec.getLength());
 
             workers.add(temp);

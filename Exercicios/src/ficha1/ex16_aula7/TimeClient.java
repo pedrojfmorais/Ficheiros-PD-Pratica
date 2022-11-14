@@ -1,5 +1,6 @@
 package ficha1.ex16_aula7;
 
+import java.io.IOException;
 import java.net.MalformedURLException;
 import java.rmi.Naming;
 import java.rmi.NotBoundException;
@@ -9,7 +10,7 @@ import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
 
 public class TimeClient {
-    public static void main(String[] args) throws MalformedURLException, NotBoundException, RemoteException {
+    public static void main(String[] args) throws IOException, NotBoundException {
 
         // Com registry externo
 //        Remote remoteRef = Naming.lookup("rmi://127.0.0.1:1099/timeserver");

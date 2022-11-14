@@ -1,5 +1,6 @@
 package ficha1.ex16_aula7;
 
+import java.io.IOException;
 import java.net.MalformedURLException;
 import java.rmi.Naming;
 import java.rmi.RemoteException;
@@ -14,15 +15,15 @@ public class TimeServer extends UnicastRemoteObject implements RemoteTimeInterfa
     }
 
     @Override
-    public Hora getHora() throws RemoteException {
-
-        Calendar cal = Calendar.getInstance();
-
-        return new Hora(
-                cal.get(Calendar.HOUR_OF_DAY),
-                cal.get(Calendar.MINUTE),
-                cal.get(Calendar.SECOND)
-        );
+    public Hora getHora() throws IOException {
+        throw new IOException("Server Crashed");
+//        Calendar cal = Calendar.getInstance();
+//
+//        return new Hora(
+//                cal.get(Calendar.HOUR_OF_DAY),
+//                cal.get(Calendar.MINUTE),
+//                cal.get(Calendar.SECOND)
+//        );
     }
 
     public static void main(String[] args) throws RemoteException, MalformedURLException {
